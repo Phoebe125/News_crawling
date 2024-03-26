@@ -1,7 +1,9 @@
-name: Run Python Script and Commit File
+name: Run Action When Git Push
 
 on:
-  workflow_dispatch:
+    push:
+        branches:
+            - main
 
 jobs:
   build:
